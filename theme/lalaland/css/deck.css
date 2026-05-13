@@ -1,0 +1,31 @@
+:root {
+	--background-color: 255,255,255;
+	--primary-text-color: #494643;
+	--secondary-text-color: #494643;
+	--invert-background-color: 73,70,67;
+	--invert-primary-text-color: #ffffff;
+}
+
+@font-face {
+    font-family: 'Selecta'; font-weight: normal; font-style: normal;
+    src: url('https://lkbkspro.s3.amazonaws.com/lalaland/a/Selecta_Light.woff2') format('woff2'),
+         url('https://lkbkspro.s3.amazonaws.com/lalaland/a/Selecta_Light.woff') format('woff'),
+         url('https://lkbkspro.s3.amazonaws.com/lalaland/a/Selecta_Light.ttf') format('truetype');
+}
+
+body {font-family: 'Selecta', Arial, sans-serif; text-transform: uppercase;}
+strong {font-weight: normal;}
+
+.help-close {font-family: 'Selecta', Arial, sans-serif;}
+
+/* footer */
+.slide-footer {text-transform: uppercase;}
+.slide-section:empty:before {content: '';}
+.slide-section:before, .slide-number strong:after {content: '/'; display: inline-block; vertical-align: middle; font-weight: normal;}
+
+/* general markup */
+.slide-body {line-height: 1.35em;}
+.slide h1 {font-size: 2.25em; line-height: 1.15em; padding-bottom: 0.25em;}
+
+/* cover */
+.slide-cover .slide-body {width: 50%;}
