@@ -1,5 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Large video files (GitHub blocks blobs > 100 MB without LFS)
-*.mp4 filter=lfs diff=lfs merge=lfs -text
+# MP4s are kept as normal Git blobs (not LFS) so GitHub Pages can serve them.
+# Current deck videos are under 100 MB each (GitHub blob limit).
