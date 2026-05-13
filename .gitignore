@@ -6,7 +6,3 @@ Thumbs.db
 *.bak
 *.tmp
 *~
-
-# Source materials and oversized assets that exceed GitHub's 100 MB limit
-pp/media/media3.mp4
-pp/manifest.json
