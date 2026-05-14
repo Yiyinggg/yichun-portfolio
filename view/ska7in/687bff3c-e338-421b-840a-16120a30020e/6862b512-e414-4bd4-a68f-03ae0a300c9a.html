@@ -30,7 +30,8 @@
 		.pp-stage .pp-img,
 		.pp-stage .pp-video {
 			position: absolute;
-			object-fit: cover;
+			/* PPT uses <a:stretch><a:fillRect/> — fill frame exactly, not letterbox/crop like cover */
+			object-fit: fill;
 			display: block;
 		}
 		.pp-stage .pp-text {
