@@ -41,6 +41,16 @@
 			object-fit: contain !important;
 			object-position: center !important;
 		}
+		/* Slide 32 (image42 + image43): overall 1.5× zoom vs PPT layout */
+		#slide-32 .pp-stage {
+			transform: scale(1.5);
+			transform-origin: center center;
+			overflow: visible;
+		}
+		#slide-32 .slide-background,
+		#slide-32 .slide-inner {
+			overflow: visible;
+		}
 		.pp-stage .pp-text {
 			position: absolute;
 			color: #000;
