@@ -41,9 +41,16 @@
 			object-fit: contain !important;
 			object-position: center !important;
 		}
-		/* Slide 32 (image42 + image43): overall 1.5× zoom vs PPT layout */
+		/* Slide 32 (image42 + image43): 1.5× zoom, then nudge so mass sits in horizontal whitespace */
+		#slide-32 .slide-background {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
 		#slide-32 .pp-stage {
-			transform: scale(1.5);
+			transform: scale(1.5) translateX(-11%);
 			transform-origin: center center;
 			overflow: visible;
 		}
