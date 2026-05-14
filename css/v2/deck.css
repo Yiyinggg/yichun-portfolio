@@ -52,7 +52,7 @@ img {-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; u
 .slide-number strong {font-weight: 500; color: var(--secondary-text-color);}
 
 .slide-background {width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 0; overflow: hidden;}
-.slide-background img, .slide-background video {height: 100%; width: 100%; object-fit: cover;}
+.slide-background img:not(.pp-img), .slide-background video:not(.pp-video) {height: 100%; width: 100%; object-fit: cover;}
 .slide-overlay {position: absolute; visibility: visible; top: 0; left: 0; opacity: 0; height: 100%; width: 100%; background: rgb(var(--background-color)); pointer-events: none;}
 
 .slide-copy {padding: 4.5vw;}

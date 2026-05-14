@@ -35,6 +35,12 @@
 			object-position: center;
 			display: block;
 		}
+		/* Direct media only: cropped slides use inner <img style="object-fit:fill"> which must stay fill. */
+		.pp-deck-slide .slide-background .pp-stage > .pp-img,
+		.pp-deck-slide .slide-background .pp-stage > .pp-video {
+			object-fit: contain !important;
+			object-position: center !important;
+		}
 		.pp-stage .pp-text {
 			position: absolute;
 			color: #000;
