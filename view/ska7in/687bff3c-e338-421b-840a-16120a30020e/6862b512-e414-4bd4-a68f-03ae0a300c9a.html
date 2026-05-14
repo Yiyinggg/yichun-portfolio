@@ -41,7 +41,7 @@
 			object-fit: contain !important;
 			object-position: center !important;
 		}
-		/* Slide 32 (image42 + image43): 1.5× zoom; image43 centered in right-hand whitespace */
+		/* Slide 32: 1.5× visual zoom without viewport crop — layout box is /1.5 then scale(1.5). */
 		#slide-32 .slide-background {
 			display: flex;
 			align-items: center;
@@ -50,12 +50,15 @@
 			height: 100%;
 		}
 		#slide-32 .pp-stage {
+			width: calc(min(100vw, 100vh * 16 / 9) / 1.5);
+			height: calc(min(100vh, 100vw * 9 / 16) / 1.5);
 			transform: scale(1.5);
 			transform-origin: center center;
-			overflow: visible;
+			overflow: hidden;
 		}
 		#slide-32 .slide-background,
-		#slide-32 .slide-inner {
+		#slide-32 .slide-inner,
+		#slide-32 .slide-wrapper {
 			overflow: visible;
 		}
 		.pp-stage .pp-text {
@@ -871,7 +874,7 @@
 			<div class="slide-background">
 				<div class="pp-stage">
 	<img class="pp-img" src="../../../pp/media/image42.jpeg" style="left:10.1458%;top:0.0000%;width:39.7656%;height:100.0000%;" />
-	<img class="pp-img" src="../../../pp/media/image43.jpeg" style="left:56.6172%;top:38.9074%;width:36.6771%;height:43.4722%;" />
+	<img class="pp-img" src="../../../pp/media/image43.jpeg" style="left:56.6172%;top:28.2639%;width:36.6771%;height:43.4722%;" />
 				</div>
 			</div>
 			<div class="slide-content">
